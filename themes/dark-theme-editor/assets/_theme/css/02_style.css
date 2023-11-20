@@ -29,7 +29,7 @@ body {
 
 /*** Header ***/
 header {
-    font-size: 8pt;
+    font-size: 10pt;
     color: white;
     border-bottom: 1pt solid rgb(59, 59, 59);
 }
@@ -230,7 +230,7 @@ article.main > div.list-terms > ul > li:hover {
 
 /*** footer ***/
 footer {
-    font-size: 8pt;
+    font-size: 10pt;
     color: grey;
     border-top: 1pt solid rgb(59, 59, 59);
     padding: 0 3pt;

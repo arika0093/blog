@@ -17,11 +17,13 @@
     </div>
 
     <div class="header_middle">
-        {{ if .IsHome }}
-            {{ $.Site.Params.header.title }}
-        {{ else }}
-            {{ $.Page.Title }} -
-            {{ $.Site.Params.header.title }}
-        {{ end }}
+        <a href="/">
+            {{ if .IsHome }}
+                {{ $.Site.Params.header.title }}
+            {{ else }}
+                {{ $.Page.Title }} -
+                {{ $.Site.Params.header.title }}
+            {{ end }}
+        </a>
     </div>
 </header>
