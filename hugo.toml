@@ -1,0 +1,65 @@
+baseURL = 'https://example.org/'
+languageCode = 'ja-JP'
+title = 'Ark Memo'
+theme = "dark-theme-editor"
+defaultContentLanguage = "ja"
+hasCJKLanguage = true
+relativeURLs = true
+
+[outputs]
+	home = ["HTML","RSS","JSON"]
+
+[taxonomies]
+	_merge = "deep"
+
+# https://themes.gohugo.io/themes/dark-theme-editor/
+[params.header]
+	title = "Ark Memo"
+	subtitle = "適当な書き散らし"
+
+[params.footer]
+	copyrightStr = ""
+	counter = true
+	language = false
+	hugoVersion = false
+	theme = false
+	modifiedTime = true
+	dateFormat = "2006-01-02 15:04:05"
+	gitHash = true
+
+[params.footer.socialLink]
+	github = "https://github.com/arika0093"
+	facebook = ""
+	twitter = "https://x.com/ark4x"
+	email = ""
+	linkedin = ""
+	instagram = ""
+	telegram = ""
+	medium = ""
+	vimeo = ""
+	youtube = ""
+
+[params.globalFrontmatter]
+	author = "Arika"
+	description = "Memo Blog"
+	keywords = "memo,tech"
+
+[params.homePage]
+	siteLongDescription = ""
+	siteLongDescriptionTitle = " "
+	showRecentPostsBlock = true
+	numOfRecentPosts = 10
+	recentPostShowUrl = false
+
+
+# Paramater applied in the single page
+# These values could be overwritten by the frontmatter in the single page.
+[params.page]
+	# Should include Table of Content in front of the page or not.
+	includeToc = true
+	showAuthor = false
+	showDate = true
+	dateFormat = "2006-01-02"
+	showTimeToRead = true
+	showBreadcrumb = false
+	codeBlockCopible = true
