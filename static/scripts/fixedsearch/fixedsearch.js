@@ -173,10 +173,12 @@ fixedsearch = function(){
 	--------------------------------------------------------------*/
 	function search_init() {
 		if (first_run) {
-			load_script(window.location.origin + '/scripts/fixedsearch/fuse.js').then(() => {
+			const baseUrl = search_form.getAttribute('data-base-url')
+			load_script(`${baseUrl}scripts/fixedsearch/fuse.js`).then(() => {
 				search_input.value = ""; // reset default value
 				first_run = false; // let's never do this again
-				fetch_JSON(search_form.getAttribute('data-language-prefix') + '/index.json', function(data){
+				const jsonUrlPrefix = baseUrl ? `./${baseUrl}` : "."
+				fetch_JSON(`${baseUrl}index.json`, function(data){
 					var options = { // fuse.js options; check fuse.js website for details
 						shouldSort: true,
 						location: 0,

@@ -1,14 +1,14 @@
 <!-- layouts/partials/search.html -->
-<form id="search-form" class="noscript" method="GET" action="https://duckduckgo.com/" data-language-prefix="{{ site.LanguagePrefix }}">
+<form id="search-form" class="noscript" method="GET" action="https://duckduckgo.com/" data-base-url='{{ relURL "" }}'>
 	<div class="search-bar">
 		<span class="search--hint">CTRL + /</span>
-		<input id="search-input" class="search--display" name="q" tabindex="0" autocomplete="off" {{ with site.BaseURL }}value=" site:{{ . }}"{{ end }} placeholder="Search Contents...">
+		<input id="search-input" class="search--display" name="q" tabindex="0" autocomplete="off" placeholder="Search Contents...">
 		<input id="search-submit" class="icon" type="submit" value="🔍">
 	</div>
 	<ul id="search-results" class="search--display"></ul>
 </form>
 <!-- <script src="{{ "/scripts/fuse.js" | relURL }}"></script> -->
-<script src="{{ "/scripts/fixedsearch/fixedsearch.js" | relURL }}"></script>
+<script src='{{ "/scripts/fixedsearch/fixedsearch.js" | relURL }}'></script>
 
 <style>
 	#search-form {
