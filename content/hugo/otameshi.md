@@ -2,7 +2,7 @@
 title = 'Hugoを使ってブログを作成してみました'  
 date = 2023-11-20T23:25:41+09:00  
 tags = ['app','hugo','blog','otameshi']  
-categories = ['app']  
+categories = ['otameshi']  
 draft = false  
 +++  
   
